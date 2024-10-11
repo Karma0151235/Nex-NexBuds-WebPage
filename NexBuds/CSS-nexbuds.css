@@ -1,0 +1,302 @@
+font-face {
+    font-family: Inter;
+    src: src("Inter-Regular.ttf");
+}
+
+*{
+    padding : 0;
+    margin : 0;
+    box-sizing: border-box;
+}
+
+.intertxt{
+    font-family: Inter;
+}
+
+.logo{
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.nav {
+    background-color: black;
+    width: 100%;
+    height: auto;
+    padding: 15px 5%;
+
+    font-size:1.75rem;
+    font-family: Inter;
+    font-weight: 600;
+}
+
+.navlist {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.navlist a{
+    color: white;
+    text-decoration: none;
+}
+
+.navlist a:hover {
+    color:red;
+} 
+
+
+.centered-box {
+    display: flex;
+    align-items:center; 
+    justify-content:center;
+}
+
+.relative-box {
+    position: relative;
+}
+
+.relative-box > * {
+    position: absolute;
+}
+
+.flex-box {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.row {
+    padding: 3%;
+}
+
+@media screen and (max-width: 899px) {
+    .row {
+        padding: 3% 10%;
+    }
+}
+
+
+
+.top-section {
+    position: relative;
+}
+
+.top-section > img {
+    width: 100%;
+}
+
+.top-section > .centered-box{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.middle-section {
+    background: linear-gradient(180deg, #EEF5F5 0%, #E73C45 100%);
+}
+
+.bottom-section {
+    position: relative;
+}
+
+.image-text > *:nth-child(1) {
+    width: 60%;
+    object-fit: scale-down;
+}
+
+.image-text > *:nth-child(2) {
+    width: 40%;
+}
+
+@media screen and (max-width:899px) {
+    .image-text > *:nth-child(1) {
+        width: 100%;
+    }
+    .image-text > *:nth-child(2) {
+        padding: 10%;
+        width: 100%;
+    }
+}
+
+.icon-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 5%;
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width:899px) {
+    .icon-grid {
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+    };
+}
+
+.icon-card {
+    background-color: white;
+    border-radius: 50px;
+    padding: 25px;
+}
+
+.icon-card-inner {
+    display: grid;
+    grid-template-rows: 2fr 3fr;
+}
+
+.icon-card-inner > img {
+    height: 15vw;
+    margin: 0 auto;
+}
+
+.icon-card-inner div {
+    display: flex;
+    padding: 3vw;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.icon-card-inner h6 {
+    font-weight: 400;
+}
+
+.full-width-card {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    border-radius: 50px;
+    width: 100%;
+}
+
+.full-width-card > *:nth-child(1) {
+    width: 60%;
+}
+
+.full-width-card > *:nth-child(2) {
+    padding: 50px 0;
+    width: 40%;
+}
+
+@media screen and (max-width: 899px) {
+    .full-width-card > *:nth-child(1) {
+        width: 100%;
+    }
+
+    .full-width-card > *:nth-child(2) {
+        display: flex;
+        justify-content: center;
+        padding: 25px;
+        width: 100%;
+    }
+}
+
+.full-width-card img{
+    width: 90%;
+    aspect-ratio: 1 / 1;
+}
+
+.bottom-section > img{
+    object-fit: contain;
+    width: 100%;
+}
+
+.bottom-box{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+.finaltext{
+    z-index: 1;
+    color: white;
+    font-size: 4rem;
+    padding-top: 60%;
+    text-align: center;
+}
+
+.bold{
+    font-weight: bolder;
+}
+
+.cbtext{
+    font-size: 3.5rem;
+}
+
+@media screen and (max-width: 899px) {
+    .finaltext{
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .cbtext{
+        font-size: 2rem;
+        padding-top: 1.5rem;
+    }
+
+}
+
+.footer {
+    background-color: white;
+    width: 100%;
+    height: auto;
+    padding: 20px 5%;
+
+    font-size: 1.2rem;
+    font-family: Inter;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.footerlist1, .footerlist2{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.footerlist1  {
+    color: black;
+    text-decoration: none;
+}
+
+.footerlist2 a{
+    color: black;
+    text-decoration: none;
+}
+
+.footerlist2 a:hover {
+    color: grey;
+} 
+
+@media screen and (max-width: 900px){
+    .navlist {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .navlist :nth-child(3){
+        order:-1;
+    }
+
+
+.footer {
+        flex-direction: column;
+        gap: 1rem;
+}
+
+.footerlist2 a{
+    font-size: 0.8rem;
+}
+}
